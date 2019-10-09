@@ -1,14 +1,58 @@
 @import "variables";
 
+
 @media only screen and (max-width: 600px) {
   .bluetop {
     color: white;
-    background-color: lighten($bluecolor, 10%);
+    background-color: lighten(blue, 10%);
+    padding-bottom: 20px;
+    display: flex;
+    flex-direction: column;
+    img {
+      margin-top: 10px;
+      margin-bottom: 10px;
+      border-radius: 50%;
+      height: 150px;
+      width: 150px;
+      align-self: center;
+      justify-self: center;
+    }
+    p {
+      text-align: center;
+    }
   }
 
   .projects {
     display: flex;
     flex-direction: column;
+    background-color: lightgrey;
+    img {
+      height: 300px;
+      width: 90%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 25px;
+      margin-left: 20px;
+    }
+    p {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-family: 'Enriqueta' ;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+
+  .linkbar {
+    background-color: lighten(blue, 10%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
 
