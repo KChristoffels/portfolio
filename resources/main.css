@@ -15,7 +15,13 @@
     align-self: center;
     justify-self: center;
   }
-  .bluetop p {
+
+  .textcontainer {
+    display: flex;
+    flex-direction: column;
+    margin: auto;
+  }
+  .textcontainer p {
     text-align: center;
   }
 
@@ -50,6 +56,50 @@
   .linkbar img {
     height: 50px;
     width: 50px;
+  }
+}
+@media only screen and (min-width: 601px) {
+  .bluetop {
+    color: white;
+    background-color: #3333ff;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    margin: auto;
+    justify-content: space-around;
+  }
+  .bluetop img {
+    border-radius: 50%;
+    height: 250px;
+    width: 250px;
+  }
+  .bluetop p {
+    text-align: center;
+  }
+
+  .textcontainer {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .projects {
+    display: flex;
+    background-color: lightgrey;
+  }
+  .projects img {
+    height: 300px;
+    width: 90%;
+    margin-top: 15px;
+    margin-bottom: 15px;
+    border-radius: 25px;
+    margin-left: 20px;
+  }
+  .projects p {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-family: "Enriqueta";
+    font-size: 20px;
+    margin-left: 20px;
   }
 }
 

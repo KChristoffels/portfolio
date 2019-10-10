@@ -1,5 +1,11 @@
 @import "variables";
-
+* {
+  margin: 0;
+  padding: 0;
+}
+body {
+  background-color: blue;
+}
 
 @media only screen and (max-width: 600px) {
   .bluetop {
@@ -16,10 +22,15 @@
       width: 150px;
       align-self: center;
       justify-self: center;
-    }
+    }    
+  }
+  .textcontainer {    
+    display: flex;
+    flex-direction: column;
+    margin: auto;  
     p {
       text-align: center;
-    }
+    }    
   }
 
   .projects {
@@ -56,3 +67,77 @@
   }
 }
 
+
+
+@media only screen and (min-width: 601px) {
+  .bluetop {
+    color: white;
+    background-color: lighten(blue, 10%);
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display: flex;
+    margin: auto;  
+    justify-content: space-around;  
+    img {    
+      
+      border-radius: 50%;
+      height: 250px;
+      width: 250px;     
+    }
+    p {
+      text-align: center;      
+    }  
+  }
+  .textcontainer {    
+    display: flex;
+    flex-direction: column;    
+  }
+  .projects {
+    display: grid;
+    grid-template-areas: 
+        "A B"
+        "C D"
+        "E F"
+        "G H";    
+    background-color: lightgrey;
+    img {
+      height: 300px;
+      width: 90%;
+      margin-top: 15px;
+      margin-bottom: 15px;
+      border-radius: 25px;
+      margin-left: 20px;
+    }
+    p {
+      margin-top: 15px;
+      margin-bottom: 15px;
+      font-family: 'Enriqueta' ;
+      font-size: 20px;
+      margin-left: 20px;
+    }
+  }
+  #A {
+    grid-area: A;
+  }
+  #B {
+    grid-area: B;
+  }
+  #C {
+    grid-area: C;
+  }
+  #D {
+    grid-area: D;
+  }
+  #E {
+    grid-area: E;
+  }
+  #F {
+    grid-area: F;
+  }
+  #G {
+    grid-area: G;
+  }
+  #A {
+    grid-area: A;
+  }
+}
