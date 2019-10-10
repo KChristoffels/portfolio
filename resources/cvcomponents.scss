@@ -11,7 +11,25 @@
 }
 .gridmaker {
     display: grid;
+    height: 400px;
+    width: 100%;
     grid-template-areas: 
-        "A B C"
-        "D E";
+        "1 2 3"
+        "4 5";
+}
+.gridone {
+    grid-area: 1;
+    width: 20%;
+}
+.gridtwo {
+    grid-area: 2;
+}
+.gridthree {
+    grid-area: 3;
+}
+.gridfour {
+    grid-area: 4;
+}
+.gridfive {
+    grid-area: 5;
 }

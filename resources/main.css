@@ -3,14 +3,14 @@
   padding: 0;
 }
 
-body {
-  background-color: blue;
-}
-
 @media only screen and (max-width: 600px) {
+  body {
+    background-color: blue;
+  }
+
   .bluetop {
     color: white;
-    background-color: #3333ff;
+    background-color: #ff3333;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -74,6 +74,10 @@ body {
   }
 }
 @media only screen and (min-width: 601px) {
+  body {
+    background-color: blue;
+  }
+
   .bluetop {
     color: white;
     background-color: #3333ff;
@@ -176,6 +180,46 @@ body {
     height: 50px;
     width: 50px;
   }
+}
+.subsection {
+  background-color: #1a1a1a;
+  color: white;
+}
+
+.listcontainer {
+  background-color: #9a9a9a;
+}
+.listcontainer img {
+  height: 50px;
+  width: 50px;
+}
+
+.gridmaker {
+  display: grid;
+  height: 400px;
+  width: 100%;
+  grid-template-areas: "1 2 3" "4 5";
+}
+
+.gridone {
+  grid-area: 1;
+  width: 20%;
+}
+
+.gridtwo {
+  grid-area: 2;
+}
+
+.gridthree {
+  grid-area: 3;
+}
+
+.gridfour {
+  grid-area: 4;
+}
+
+.gridfive {
+  grid-area: 5;
 }
 
 /*# sourceMappingURL=main.css.map */
