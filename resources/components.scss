@@ -27,16 +27,22 @@ body {
   .textcontainer {    
     display: flex;
     flex-direction: column;
-    margin: auto;  
+    margin: auto;
+    padding-top: 20px;
+    padding-bottom: 20px;  
     p {
       text-align: center;
+      margin-top: 10px;
+      margin-bottom: 10px;
     }    
   }
 
   .projects {
     display: flex;
     flex-direction: column;
-    background-color: lightgrey;
+    background-color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
     img {
       height: 300px;
       width: 90%;
@@ -73,8 +79,9 @@ body {
   .bluetop {
     color: white;
     background-color: lighten(blue, 10%);
-    padding-top: 20px;
-    padding-bottom: 20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    
     display: flex;
     margin: auto;  
     justify-content: space-around;  
@@ -85,24 +92,31 @@ body {
       width: 250px;     
     }
     p {
-      text-align: center;      
+      text-align: center;            
     }  
   }
   .textcontainer {    
     display: flex;
-    flex-direction: column;    
+    flex-direction: column;
+    align-self: center;
+    p {
+      margin-top: 10px;
+      margin-bottom: 10px;
+    }    
   }
   .projects {
+    padding-top: 50px;
+    padding-bottom: 50px;
     display: grid;
     grid-template-areas: 
         "A B"
         "C D"
         "E F"
         "G H";    
-    background-color: lightgrey;
+    background-color: white;
     img {
       height: 300px;
-      width: 90%;
+      width: 400px;
       margin-top: 15px;
       margin-bottom: 15px;
       border-radius: 25px;
@@ -118,26 +132,46 @@ body {
   }
   #A {
     grid-area: A;
+    justify-self: center;
   }
   #B {
     grid-area: B;
+    justify-self: center;
   }
   #C {
     grid-area: C;
+    justify-self: center;
   }
   #D {
     grid-area: D;
+    justify-self: center;
   }
   #E {
     grid-area: E;
+    justify-self: center;
   }
   #F {
     grid-area: F;
+    justify-self: center;
   }
   #G {
     grid-area: G;
+    justify-self: center;
   }
-  #A {
-    grid-area: A;
+  #H {
+    grid-area: H;
+    justify-self: center;
+  }
+
+  .linkbar {
+    background-color: lighten(blue, 10%);
+    display: flex;
+    justify-content: space-around;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    img {
+      height: 50px;
+      width: 50px;
+    }
   }
 }
