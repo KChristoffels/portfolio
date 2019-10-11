@@ -1,74 +1,107 @@
-
+ul {
+    list-style-type: square;
+}
 .cvhead {
     background-color: lighten(black, 10%);
     color: white;
     display: flex;
     justify-content: space-around;
-    height: 200px;
+    height: 200px;    
     img {
-        height: 70px;
-        width: 70px;
+        height: 120px;
+        width: 120px;
         position: absolute;                
         border-radius: 50%;                
     }
 }
 .profilesection {
     display: flex;
-    flex-direction: column;
-    align-content: space-between;
-    width: 33%;
-    align-items: center;
-    a {
-        margin-top: 120px;
-        justify-self: center;
-    }
+    flex-direction: column;    
+    width: 33%;    
+    padding-left: 50px;
+    padding-top: 20px;
+    justify-items: space-between;
     img {
         margin-top: 20px;
+        padding-top: 20px;
     }
 }
 .identifier {
     display: flex;
     flex-direction: column;
-    width: 33%;
+    width: 33%;    
+    align-items: flex-start;
+    font-size: 30px;
+    padding-top: 50px;
+    padding-right: 20px;
 }
 .personaldata {
     display: flex;
     flex-direction: column;
     width: 34%;
+    
+    align-items: flex-start;
+    font-size: 20px;    
+    * {
+        margin-top: 10px;
+    }
 }
 
 .subsection {
     background-color: darken(grey, 20%);
     color: white;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-size: 20px;
 }
 .listcontainer {
-    background-color: lighten(grey, 10%);
+    background-color: lighten(grey, 40%);
+    height: 150px;
+    width: 100%;
+    font-size: 20px;
+    padding-top: 50px;
     img {
-        height: 50px;
-        width: 50px;
+        height: 90px;
+        width: 90px;
     }
 }
 .gridmaker {
     display: grid;
-    height: 400px;
+    height: 300px;
     width: 100%;
-    grid-template-areas: 
-        "1 2 3"
-        "4 5";
+    grid-template-rows: auto auto;
+    grid-template-columns: auto auto auto;
+    justify-content: space-around;
+    align-items: space-around;
+    padding-bottom: 20px;
 }
 .gridone {
-    grid-area: 1;
-    width: 20%;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .gridtwo {
-    grid-area: 2;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 1;
+    grid-column-end: 2;
 }
 .gridthree {
-    grid-area: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .gridfour {
-    grid-area: 4;
+    grid-row-start: 2;
+    grid-row-end: 3;
+    grid-column-start: 2;
+    grid-column-end: 3;
 }
 .gridfive {
-    grid-area: 5;
+    grid-row-start: 1;
+    grid-row-end: 2;
+    grid-column-start: 3;
+    grid-column-end: 4;
 }
