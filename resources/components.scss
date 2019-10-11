@@ -5,12 +5,10 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
+  
   .bluetop {
     color: white;
-    background-color: lighten(red, 10%);
+    background-color: lighten(blue, 10%);
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;

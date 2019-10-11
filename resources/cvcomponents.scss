@@ -1,8 +1,44 @@
+
 .cvhead {
     background-color: lighten(black, 10%);
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    height: 200px;
+    img {
+        height: 70px;
+        width: 70px;
+        position: absolute;                
+        border-radius: 50%;                
+    }
 }
+.profilesection {
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+    width: 33%;
+    align-items: center;
+    a {
+        margin-top: 120px;
+        justify-self: center;
+    }
+    img {
+        margin-top: 20px;
+    }
+}
+.identifier {
+    display: flex;
+    flex-direction: column;
+    width: 33%;
+}
+.personaldata {
+    display: flex;
+    flex-direction: column;
+    width: 34%;
+}
+
 .subsection {
-    background-color: darken(grey, 40%);
+    background-color: darken(grey, 20%);
     color: white;
 }
 .listcontainer {

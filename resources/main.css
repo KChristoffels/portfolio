@@ -4,13 +4,9 @@
 }
 
 @media only screen and (max-width: 600px) {
-  body {
-    background-color: blue;
-  }
-
   .bluetop {
     color: white;
-    background-color: #ff3333;
+    background-color: #3333ff;
     padding-bottom: 20px;
     display: flex;
     flex-direction: column;
@@ -181,8 +177,49 @@
     width: 50px;
   }
 }
-.subsection {
+.cvhead {
   background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: space-around;
+  height: 200px;
+}
+.cvhead img {
+  height: 70px;
+  width: 70px;
+  position: absolute;
+  border-radius: 50%;
+}
+
+.profilesection {
+  display: flex;
+  flex-direction: column;
+  align-content: space-between;
+  width: 33%;
+  align-items: center;
+}
+.profilesection a {
+  margin-top: 120px;
+  justify-self: center;
+}
+.profilesection img {
+  margin-top: 20px;
+}
+
+.identifier {
+  display: flex;
+  flex-direction: column;
+  width: 33%;
+}
+
+.personaldata {
+  display: flex;
+  flex-direction: column;
+  width: 34%;
+}
+
+.subsection {
+  background-color: #4d4d4d;
   color: white;
 }
 
